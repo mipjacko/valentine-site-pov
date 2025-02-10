@@ -2,7 +2,7 @@ body {
     background-color: #ffebee;
     text-align: center;
     font-family: 'Arial' , sans-serif;
-    overflow: hidden;
+    overflow: scroll;
 }
 
 .container {
@@ -75,11 +75,11 @@ button:hover {
     }
 
     button {
-        font-size: 16px;
+        font-size: 20px;
         padding: 10px 20px;
     }
     .gallery img {
-        max-width: 180px;
+        max-width: 200px;
     }
 }
 
@@ -93,6 +93,6 @@ button:hover {
     }
 
     .gallery img {
-        max-width: 150px;
+        max-width: 180px;
     }
 }
