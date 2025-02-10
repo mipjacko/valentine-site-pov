@@ -1,0 +1,97 @@
+body {
+    background-color: #ffebee;
+    text-align: center;
+    font-family: 'Arial' , sans-serif;
+    overflow: hidden;
+}
+
+.container {
+    margin-top: 10%;
+}
+
+h1 {
+    font-size: 24px;
+    color: #d62828;
+}
+
+button {
+    background-color: #d62828;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #9b1d1d;
+}
+
+/*استیل گالری تصاویر*/
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.gallery img {
+    width: 220px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+/* انیمیشن بارش قلب*/
+
+@keyframes falling {
+    0% { transform: translateY(0); opacity: 1; }
+    100% {transform: translateY(100vh);opacity: 0; }
+}
+
+.heart {
+    position: absolute;
+    color: #d62828;
+    font-size: 20px;
+    animation: falling 3s linear infinite;
+}
+
+/* تنظیمات برای گوشی ها و تبلت ها 📱*/
+
+@media screen and (max-width:768px) {
+    .container { 
+        margin-top: 10%;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+    .gallery img {
+        max-width: 180px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 20px;
+    }
+    button {
+       font-size: 14px;
+       padding: 8px 16px;
+    }
+
+    .gallery img {
+        max-width: 150px;
+    }
+}
